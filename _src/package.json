@@ -1,0 +1,23 @@
+{
+  "name": "downloader",
+  "version": "1.0.0",
+  "main": "downloader.js",
+  "bin": "downloader.js",
+  "scripts": {
+    "publish": "pkg . --targets node18-win-x64 --output downloader.exe",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "pkg": {
+    "assets": [
+      "node_modules/**/*",
+      "websites/**/*"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "playwright": "^1.52.0"
+  }
+}
